@@ -77,6 +77,16 @@ class Pdb:
         query = f"UPDATE {table_name} SET {updates_str} {conditions}"
         with self.connect() as cursor:
             cursor.execute(query, values)
+    def execute_sql(self, sql_query: str, params: tuple = ()):
+        with self.connect() as cursor:
+            cursor.execute(sql_query, params)
+            try:
+                # Try fetching results if it's a SELECT query
+                result = cursor.fetchall()
+            except sqlite3.ProgrammingError:
+                # If it's not a SELECT query (e.g., INSERT, UPDATE), there are no results to fetch
+                result = [] 
+        return result
 
     def delete(self, table_name: str, conditions: str = ""):
         """Delete data from a table."""
