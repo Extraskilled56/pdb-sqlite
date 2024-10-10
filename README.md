@@ -1,5 +1,3 @@
-# Example Package
+# Pdb stands for Python Database.
 
-This is a simple example package. You can use
-[GitHub-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
-to write your content.
+Sqlite rapper for easily creating and managing database's
