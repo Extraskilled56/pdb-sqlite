@@ -1,4 +1,4 @@
-# Change log for 2.0.0
+# Change log for 2.0.1
 
-- Added feature to execute raw sql commands
+- Fixed import bug python
 
