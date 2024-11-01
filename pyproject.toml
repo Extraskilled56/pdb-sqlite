@@ -1,5 +1,5 @@
 [project]
-name = "pdb_database"
+name = "pdb_sqlite"
 version = "2.0.1"
 description = "Simple Sqlite rapper"
 readme = "README.md"
@@ -7,7 +7,7 @@ license = { file = "LICENSE" }
 authors = [
     { name = "Zachary Jones", email = "zacharyj@bitsyncdev.com" }
 ]
-homepage = "https://github.com/extraskilled56/pdb-database"
+homepage = "https://github.com/extraskilled56/pdb-sqlite"
 requires-python = ">=3.7"
 dependencies = [
     # List your dependencies here, e.g. "requests>=2.25"
@@ -18,9 +18,9 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project.urls]
-# Documentation = "https://github.com/extraskilled56/pdb-database/docs"
-Source = "https://github.com/extraskilled56/pdb-database"
-Tracker = "https://github.com/extraskilled56/pdb-database/issues"
+# Documentation = "https://github.com/extraskilled56/pdb-sqlite/docs"
+Source = "https://github.com/extraskilled56/pdb-sqlite"
+Tracker = "https://github.com/extraskilled56/pdb-sqlite/issues"
 
 [tool.hatch.build.targets.wheel]
-packages = ["pdb"]
+packages = ["pdb_sqlite"]
